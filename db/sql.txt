@@ -1,0 +1,31 @@
+CREATE DATABASE Shop;
+CREATE TABLE Products (
+	ID int NOT NULL PRIMARY KEY,
+	Name varchar(255),
+	Description varchar(255),
+	Price int
+);
+CREATE TABLE Users(
+	ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	FirstName varchar(255),
+	LastName varchar(255),
+	UserName varchar(255),
+	Email varchar(255),
+	Password varchar(255)
+);
+INSERT INTO Products (ID, Name, Description, Price)
+VALUES ('001', 'Laptop', 'Windows Laptop', '1000'),
+('002', 'Macbook', 'Mac Laptop', '2000'),
+('003', 'Smart Watch', 'Google Pixel Watch 2', '900'),
+('004', 'Apple Watch', 'Apple Watch Series 9', '1000'),
+('005', 'Earpods', 'JBL Vibe', '300'),
+('006', 'AirPods', '3rd Generation', '500');
+
+INSERT INTO Users (ID, FirstName, LastName, Username, Email, Password)
+VALUES ('001', 'Kennedi', 'Kolton', 'kekol', 'kenkol@mekongitservice.aa', 'kekol'),
+('002', 'Tim', 'Sammi', 'tisam', 'tisam@mekongitservice.aa', 'tisam');
+
+INSERT INTO Users (FirstName, LastName, Username, Email, Password)
+VALUES ('Kennedi', 'Kolton', 'kekol', 'kenkol@mekongitservice.aa', 'kekol'),
+('Tim', 'Sammi', 'tisam', 'tisam@mekongitservice.aa', 'tisam');
+

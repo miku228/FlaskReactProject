@@ -1,0 +1,22 @@
+- make flask env
+ python -m venv backend
+
+- activate flask env after moving into the directory
+backend\Scripts\activate
+
+- Installing flask-mysqldb
+pip install flask-mysqldb
+
+- installing flask-sqlAlchemy
+pip install -U Flask-SQLAlchemy
+
+- Instal CORS
+ pip install Flask-Cors
+
+
+- React install axios
+https://github.com/axios/axios
+$ npm install axios
+
+-react shortcut
+rfce
