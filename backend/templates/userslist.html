@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users list</h1>
+    <tr>
+        {% for user in users %}
+        <td>{{ user.ID}}</td>
+        <td>{{ user.FirstName}}</td>
+        <td>{{ user.LastName}}</td>
+        <td>{{ user.UserName}}</td>
+        <td>{{ user.Email}}</td>
+        <td>{{ user.Password}}</td>
+        {% endfor %}
+    </tr>
+</body>
+</html>
